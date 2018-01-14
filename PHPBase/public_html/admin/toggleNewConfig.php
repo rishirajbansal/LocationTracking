@@ -1,0 +1,9 @@
+<?php
+
+define('SYS_NEWCONFIG_PATH', $_SERVER['DOCUMENT_ROOT'] .DIRECTORY_SEPARATOR. 'LocationTracking'.DIRECTORY_SEPARATOR.'conf'.DIRECTORY_SEPARATOR.'newconfig');
+
+if (file_exists(SYS_NEWCONFIG_PATH)) {
+    unlink(SYS_NEWCONFIG_PATH);
+}
+
+?>
