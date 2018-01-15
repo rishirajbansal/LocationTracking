@@ -1,5 +1,7 @@
 # LocationTracking
 
+Technologies: PHP, Java, Google Maps API, Apache server
+
 Overview
 
 A stand alone program is implemented which uses the worker credentials to login its google account and download the KML file. All this process is automated and no human intervention is required, no google APIs dependencies and no need to buy the license. User don’t need to login into the account to get the file, everything is automated and managed by the program. One of the main feature of this program is, you can add as many workers as you want and anytime without changing the code. This program will run in the background and can be scheduled to run on specific time intervals based on Task scheduler.
