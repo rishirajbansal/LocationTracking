@@ -12,12 +12,7 @@ Functions
 
 2. This program retrieves the location history records from the google account based on the current day from the beginning time ‘12:00:00 AM’ to day end time ’12:00:00 PM’. This timestamp and time zone has been set based on the google account settings.
 
-3. It filter out the records from the KML if the worker is on same location on different timestamps. For instance, 
-Record 1 : 02:05:00	39.56565	2.565565
-Record 2 : 02:06:00	39.56565	2.565565
-Record 3 : 02:07:00	39.57565	2.585565
-
-It will only consider Record 1 and Record 3.
+3. It filter out the records from the KML if the worker is on same location on different timestamps. For instance, Record 1 : 02:05:00	39.56565	2.565565 - Record 2 : 02:06:00	39.56565	2.565565 - Record 3 : 02:07:00	39.57565	2.585565 - It will only consider Record 1 and Record 3.
 
 4. If the program is executed multiple times for the same date, it will not create redundant records for already fetched location history data. It will first check if the records for the current date already exists in the database, if records exists, it will flush out those records from the database before inserting new ones.
 
